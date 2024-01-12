@@ -1,12 +1,10 @@
 -- Global objects
-std = {
-  globals = {
-    "astronvim",
-    "astronvim_installation",
-    "vim",
-    "bit",
-  },
-}
+globals = {
+  "astronvim",
+  "astronvim_installation",
+  "vim",
+  "bit",
+},
 
 -- Don't report unused self arguments of methods
 self = false

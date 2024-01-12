@@ -10,7 +10,7 @@ return {
     utils.list_insert_unique(opts.ensure_installed, "prettierd")
 
     opts.handlers = {
-      prettier = function()
+      prettierd = function()
         null_ls.register(null_ls.builtins.formatting.prettierd.with({
           extra_filetypes = { "ruby" },
           dynamic_command = cmd_resolver.from_yarn_pnp(),
