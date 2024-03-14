@@ -12,5 +12,5 @@ return {
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
-  { import = "astrocommunity.motion.flash-nvim" },
+  { import = "astrocommunity.git.octo-nvim" },
 }
