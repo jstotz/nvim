@@ -13,7 +13,6 @@ return {
       prettierd = function()
         null_ls.register(null_ls.builtins.formatting.prettierd.with({
           extra_filetypes = { "ruby" },
-          dynamic_command = cmd_resolver.from_yarn_pnp(),
         }))
       end,
       luacheck = function()
