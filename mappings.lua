@@ -1,5 +1,6 @@
 return {
   n = {
+    ["<leader>T"] = { name = "󰙨 Test" },
     ["<leader>gH"] = {
       "<cmd>:DiffviewFileHistory %<cr>",
       desc = "File history",
