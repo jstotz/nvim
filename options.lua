@@ -4,7 +4,6 @@ return {
   o = {
     guifont = "FiraCode Nerd Font:h16",
     exrc = true,
-    formatoptions = "cqj", -- disable hard wrapping by default
   },
   ---@type vim.opt
   g = {
