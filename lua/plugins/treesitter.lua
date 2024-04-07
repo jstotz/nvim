@@ -1,14 +1,11 @@
-local utils = require("astronvim.utils")
+-- Customize Treesitter
 
+---@type LazySpec
 return {
   "nvim-treesitter/nvim-treesitter",
   opts = function(_, opts)
-    opts.auto_install = true
-
-    if not opts.ensure_installed then
-      opts.ensure_installed = {}
-    end
-    utils.list_insert_unique(opts.ensure_installed, {
+    -- add more things to the ensure_installed table protecting against community packs modifying it
+    opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
       "bash",
       "c",
       "css",
@@ -17,8 +14,6 @@ return {
       "git_rebase",
       "gitcommit",
       "gitignore",
-      "go",
-      "gomod",
       "graphql",
       "hcl",
       "html",
@@ -30,7 +25,6 @@ return {
       "ruby",
       "sql",
       "tsx",
-      "typescript",
       "vim",
       "yaml",
     })
