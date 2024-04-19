@@ -3,17 +3,17 @@ return {
     "NeogitOrg/neogit",
     dependencies = {
       "nvim-lua/plenary.nvim",
-      { "AstroNvim/astroui", opts = { icons = { Neogit = "󰰔" } } },
       {
         "AstroNvim/astrocore",
         opts = function(_, opts)
           local maps = opts.mappings
-          local prefix = "<Leader>g"
-          maps.n[prefix .. "g"] = { desc = require("astroui").get_icon("Neogit", 1, true) .. "Open Neogit" }
+          local prefix = "<leader>g"
+          maps.n[prefix .. "g"] = { "<Cmd>Neogit<CR>", desc = "Open Neogit" }
         end,
       },
     },
     event = "User AstroGitFile",
+    cmd = { "Neogit" },
     opts = function(_, opts)
       local utils = require "astrocore"
       local disable_builtin_notifications = utils.is_available "nvim-notify" or utils.is_available "noice.nvim"

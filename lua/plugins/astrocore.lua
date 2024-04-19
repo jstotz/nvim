@@ -46,7 +46,7 @@ return {
           desc = "File history",
         },
         ["<leader>gl"] = { "<cmd>Git blame<cr>", desc = "View Git blame" },
-        -- ["<leader>gg"] = false, -- disable default lazygit mapping to remap to neogit
+        ["<leader>gg"] = false, -- disable default lazygit mapping to remap to neogit
       },
       t = {
         -- setting a mapping to false will disable it
