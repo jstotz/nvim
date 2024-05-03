@@ -8,7 +8,6 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
-  { import = "astrocommunity.editing-support.conform-nvim" },
   { import = "astrocommunity.git.octo-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.pack.bash" },

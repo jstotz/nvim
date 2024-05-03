@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- Customize Mason plugins
 
 ---@type LazySpec
@@ -13,20 +11,14 @@ return {
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "lua_ls",
         "solargraph",
+        "golangci_lint_ls",
       })
     end,
   },
-  -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
   {
-    "jay-babu/mason-null-ls.nvim",
-    -- overrides `require("mason-null-ls").setup(...)`
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
     opts = function(_, opts)
-      -- add more things to the ensure_installed table protecting against community packs modifying it
-      opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
-        "prettierd",
-        "stylua",
-        -- add more arguments for adding more null-ls sources
-      })
+      opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, { "solargraph" })
     end,
   },
   {

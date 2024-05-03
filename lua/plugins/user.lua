@@ -55,20 +55,4 @@ return {
       vim.keymap.set({ "n", "t" }, "<C-p>", "<CMD>NavigatorPrevious<CR>")
     end,
   },
-
-  {
-    "stevearc/conform.nvim",
-    opts = {
-      formatters_by_ft = {
-        lua = { "stylua" },
-        python = { "isort", "black" },
-        javascript = { "prettierd" },
-        ruby = { "prettierd" },
-      },
-    },
-    format_on_save = {
-      timeout_ms = 10000,
-      lsp_fallback = true,
-    },
-  },
 }
