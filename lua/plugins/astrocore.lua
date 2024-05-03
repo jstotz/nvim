@@ -40,13 +40,12 @@ return {
     mappings = {
       -- first key is the mode
       n = {
-        ["<leader>T"] = { name = "󰙨 Test" },
-        ["<leader>gH"] = {
+        ["<Leader>gH"] = {
           "<cmd>:DiffviewFileHistory %<cr>",
           desc = "File history",
         },
-        ["<leader>gl"] = { "<cmd>Git blame<cr>", desc = "View Git blame" },
-        ["<leader>gg"] = false, -- disable default lazygit mapping to remap to neogit
+        ["<Leader>gl"] = { "<cmd>Git blame<cr>", desc = "View Git blame" },
+        ["<Leader>gg"] = false, -- disable default lazygit mapping to remap to neogit
       },
       t = {
         -- setting a mapping to false will disable it

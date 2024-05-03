@@ -7,7 +7,7 @@ return {
         "AstroNvim/astrocore",
         opts = function(_, opts)
           local maps = opts.mappings
-          local prefix = "<leader>g"
+          local prefix = "<Leader>g"
           maps.n[prefix .. "g"] = { "<Cmd>Neogit<CR>", desc = "Open Neogit" }
         end,
       },
