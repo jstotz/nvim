@@ -44,7 +44,6 @@ return {
           "<cmd>:DiffviewFileHistory %<cr>",
           desc = "File history",
         },
-        ["<Leader>gl"] = { "<cmd>Git blame<cr>", desc = "View Git blame" },
         ["<Leader>gg"] = false, -- disable default lazygit mapping to remap to neogit
       },
       t = {
