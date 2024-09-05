@@ -51,4 +51,11 @@ return {
       { "-", "<CMD>Oil<CR>", { desc = "Open parent directory" } },
     },
   },
+  {
+    "lewis6991/gitsigns.nvim",
+    version = false,
+    keys = {
+      { "<leader>gB", "<CMD>Gitsigns blame<CR>", { desc = "Blame file" } },
+    },
+  },
 }

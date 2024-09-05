@@ -8,9 +8,9 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
-  { import = "astrocommunity.git.blame-nvim" },
-  { import = "astrocommunity.git.octo-nvim" },
   { import = "astrocommunity.git.diffview-nvim" },
+  { import = "astrocommunity.git.octo-nvim" },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.go" },
@@ -22,5 +22,6 @@ return {
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.yaml" },
+  { import = "astrocommunity.recipes.telescope-lsp-mappings" },
   { import = "astrocommunity.test.neotest" },
 }
