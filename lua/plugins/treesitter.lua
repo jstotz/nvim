@@ -28,5 +28,15 @@ return {
       "vim",
       "yaml",
     })
+    opts.incremental_selection = {
+      enable = true,
+      keymaps = {
+        node_incremental = "<CR>",
+        node_decremental = "<BS>",
+        scope_incremental = "<S-CR>",
+      },
+    }
+    opts.textobjects.select.keymaps["af"] = nil
+    opts.textobjects.select.keymaps["if"] = nil
   end,
 }
