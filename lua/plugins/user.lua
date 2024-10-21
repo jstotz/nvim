@@ -70,4 +70,11 @@ return {
       vim.keymap.set("x", "s", require("substitute").visual, { noremap = true })
     end,
   },
+  {
+    "nvim-telescope/telescope-frecency.nvim",
+    config = function() require("telescope").load_extension "frecency" end,
+    keys = {
+      { "<leader>ff", "<CMD>Telescope frecency workspace=CWD<CR>", desc = "Find files" },
+    },
+  },
 }

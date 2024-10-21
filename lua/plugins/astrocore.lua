@@ -45,6 +45,7 @@ return {
           desc = "File history",
         },
         ["<Leader>gg"] = false, -- disable default lazygit mapping to remap to neogit
+        ["<Leader>ff"] = false, -- disable default find files mapping to remap to telescope frecency
       },
       t = {
         -- setting a mapping to false will disable it
