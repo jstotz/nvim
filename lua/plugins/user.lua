@@ -71,6 +71,10 @@ return {
     end,
   },
   {
+    "ramilito/kubectl.nvim",
+    config = function() require("kubectl").setup() end,
+  },
+  {
     "nvim-telescope/telescope-frecency.nvim",
     config = function() require("telescope").load_extension "frecency" end,
     keys = {
