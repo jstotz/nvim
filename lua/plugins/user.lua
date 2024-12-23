@@ -75,10 +75,16 @@ return {
     config = function() require("kubectl").setup() end,
   },
   {
-    "nvim-telescope/telescope-frecency.nvim",
-    config = function() require("telescope").load_extension "frecency" end,
+  {
+    "danielfalk/smart-open.nvim",
+    branch = "0.2.x",
+    config = function() require("telescope").load_extension("smart_open") end,
+    dependencies = {
+      "kkharji/sqlite.lua",
+      { "nvim-telescope/telescope-fzy-native.nvim" },
+    },
     keys = {
-      { "<leader>ff", "<CMD>Telescope frecency workspace=CWD<CR>", desc = "Find files" },
+      { "<leader>ff", "<CMD>Telescope smart_open cwd_only=true<CR>", desc = "Find files" },
     },
   },
 }
