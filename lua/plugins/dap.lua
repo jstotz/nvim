@@ -39,7 +39,7 @@ return {
     "mfussenegger/nvim-dap",
     dependencies = { "jbyuki/one-small-step-for-vimkind" },
     config = function()
-      local dap = require "dap"
+      local dap = require("dap")
 
       dap.adapters.ruby = function(callback, config)
         ---@cast config dap.RubyConfiguration
@@ -60,7 +60,7 @@ return {
 
         vim.notify(vim.inspect(args))
 
-        callback {
+        callback({
           type = "server",
           host = "127.0.0.1",
           port = "${port}",
@@ -72,7 +72,7 @@ return {
           options = {
             max_retries = 60,
           },
-        }
+        })
       end
 
       dap.configurations.ruby = {
@@ -118,7 +118,7 @@ return {
           request = "attach",
           localfs = true,
           command = "rspec",
-          args = { function() return "${file}:" .. vim.fn.line "." end },
+          args = { function() return "${file}:" .. vim.fn.line(".") end },
         },
         {
           type = "ruby",
@@ -139,7 +139,7 @@ return {
       }
 
       dap.adapters.nlua = function(callback, config)
-        callback { type = "server", host = config.host or "127.0.0.1", port = config.port or 8086 }
+        callback({ type = "server", host = config.host or "127.0.0.1", port = config.port or 8086 })
       end
     end,
   },
