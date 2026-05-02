@@ -80,6 +80,34 @@ return {
     },
   },
   {
+    "retran/meow.yarn.nvim",
+    dependencies = { "MunifTanjim/nui.nvim" },
+    cmd = "MeowYarn",
+    opts = {},
+    keys = {
+      {
+        "<Leader>yt",
+        function() require("meow.yarn").open_tree("type_hierarchy", "supertypes") end,
+        desc = "Yarn: Type Hierarchy (Super)",
+      },
+      {
+        "<Leader>yT",
+        function() require("meow.yarn").open_tree("type_hierarchy", "subtypes") end,
+        desc = "Yarn: Type Hierarchy (Sub)",
+      },
+      {
+        "<Leader>yc",
+        function() require("meow.yarn").open_tree("call_hierarchy", "callers") end,
+        desc = "Yarn: Call Hierarchy (Callers)",
+      },
+      {
+        "<Leader>yC",
+        function() require("meow.yarn").open_tree("call_hierarchy", "callees") end,
+        desc = "Yarn: Call Hierarchy (Callees)",
+      },
+    },
+  },
+  {
     "danielfalk/smart-open.nvim",
     branch = "0.2.x",
     config = function() require("telescope").load_extension("smart_open") end,
